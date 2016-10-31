@@ -1,0 +1,221 @@
+//Estilos custom para el template del sistema de Médico
+//Author: Trueno Elfico
+
+//primario = azul
+//secundario = blanco
+//detalle = azul color-primario
+
+//info = azul
+//warning = naranja
+//danger = rojo
+//success = verde
+
+$color-primario: #039BE5;
+$color-secundario: #fff;
+$color-detalle: #80D8FF;
+
+$color-info: #0091EA;
+$color-warning: #EF6C00;
+$color-danger: #D50000;
+$color-success: #00c853;
+
+$text-color-info: #0091EA;
+$text-color-warning: #EF6C00;
+$text-color-danger: #D50000;
+$text-color-success: #00c853;
+
+$text-color-blanco: #fafafa;
+$text-color-obscuro: #424242;
+
+.btn
+  margin-left: 10px;
+.btn-info
+  background-color: $text-color-info;
+.btn-warning
+  background-color: $text-color-warning;
+.btn-danger
+  background-color: $text-color-danger;
+.btn-success
+  background-color: $text-color-success;
+
+.text-info
+  color: $text-color-info;
+.text-warning
+  color: $text-color-warning;
+.text-danger
+  color: $text-color-danger;
+.text-success
+  color: $text-color-success;
+
+
+body
+  background-color: $color-secundario;
+  color: $text-color-obscuro !important;
+
+nav
+  background-color: $color-secundario;
+  a
+    color: $text-color-obscuro !important;
+    position: relative;
+    .material-icons
+      position: absolute;
+      top: -37px;
+      left: 0px;
+    span.badge
+      position: absolute !important;
+      color: $color-secundario;
+      background-color: $text-color-info;
+      min-width: .5rem !important;
+      padding: 11px 6px !important;
+      margin: 0px;
+      top: -25px;
+      right: -7px;
+
+
+#perfil-img
+  width: 50px;
+  vertical-align: middle;
+
+#dropdown1
+  top: 56px !important;
+  //left: 1013px!important;
+  width: 152px !important;
+
+.brand-logo
+  text-indent: 10px;
+  font-size: 1.5rem !important;
+
+.side-nav
+  position: absolute;
+  background-color: $color-primario !important;
+  width: 260px;
+  li.active
+    border-left: 15px solid $color-detalle;
+    box-sizing: border-box;
+    text-indent: -7px;
+  a:hover
+    background-color: $color-secundario;
+    color: $text-color-obscuro !important;
+  .logo
+    height: auto;
+    padding: 0px !important;
+    line-height: 0px !important;
+    img
+      width: 100%;
+
+.search-wrapper
+  width: 80%;
+  margin: 0px auto 10px auto;
+  line-height: 0px;
+  text-indent: 10px;
+  #search
+    display: block;
+    font-size: 16px;
+    font-weight: 300;
+    width: 100%;
+    height: 45px;
+    margin: 0;
+    padding: 0 45px 0 15px;
+    border: 0;
+  i
+    position: absolute;
+    right: 10px;
+    top: 10px;
+
+.button-collapse
+  position: fixed;
+  top: 5px;
+  left: 5px;
+  background-color: $color-secundario !important;
+  border: none !important;
+  box-shadow: none !important
+  z-index: 998
+  i
+    color: $color-primario !important;
+
+main
+  position: relative;
+  box-sizing: border-box;
+  .wrapper
+    margin: 0px 1%;
+    margin-top: 20px;
+
+@media only screen and (min-width: 992px)
+  main
+    padding-left: 260px;
+
+$back-graphs-color1: rgba(128, 216, 255, .8);
+$back-graphs-color2: rgba(128, 216, 255, .6);
+
+.graphs
+  color: $text-color-blanco;
+  position: relative;
+  .col
+    padding: 20px;
+    box-sizing: border-box;
+    h4
+      margin: .3rem 0;
+  div:nth-child(6), #first
+    background-color: $color-detalle !important;
+  div:nth-child(2), div:nth-child(4)
+    background-color: $back-graphs-color2 !important;
+  div:nth-child(3), div:nth-child(5)
+    background-color: $back-graphs-color1 !important;
+
+
+form.input-field
+  input
+    background-color: $color-primario !important;
+
+.collapsible
+  box-shadow: none;
+  border: none;
+  margin: 0rem;
+  .collapsible-header
+    border: none;
+    color: $color-primario;
+  .collapsible-body
+    margin-left: 30px;
+    border-bottom: none;
+    p
+      padding-left: 2rem;
+      border-left: 1px solid $color-primario;
+    .collapsible-header p
+      border-left: none;
+  .collapsible
+    border-left: 1px solid $color-primario;
+    padding-left: .8rem;
+  .collapsible-body:last-child
+    padding-bottom: .5rem !important;
+.row
+  margin-bottom: 0px;
+.feed
+  .sales
+  .activity, .sales
+    border-left: 1px solid #eee;
+    height: 100vh;
+    color: #333 !important;
+    .head
+      box-sizing: border-box !important;
+      margin: 0px !important;
+      padding: 15px !important;
+      background-color: #eee;
+      h2
+        font-size: 1.2rem !important;
+        margin: 0px;
+        padding: 0px;
+    .block
+      padding: 0px 15px !important;
+      border: 1px solid #eee;
+      .line
+        padding: 15px;
+        box-sizing: border-box;
+        display: block;
+      span
+        display: block;
+      .time-ago
+        font-size: .9rem
+        color: #aaa;
+    .block:hover
+      background-color: #eee;
+      cursor: pointer;

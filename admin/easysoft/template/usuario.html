@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Template Index</title>
+
+  <link rel="stylesheet" href="css/materialize.css">
+  <link rel="stylesheet" href="css/custom.min.css">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+  <header>
+
+    <ul class="side-nav fixed hide-on-med-and-down grey">
+      <div>
+        <a class="logo" href="index.html"><img src="img/logo.png" alt="Logo" ></a>
+      </div>
+      <li class="search">
+        <div class="search-wrapper card">
+          <input id="search"><i class="material-icons">search</i>
+          <div class="search-results"></div>
+        </div>
+      </li>
+      <li class="active"><a class="grey-text text-lighten-4 waves-effect waves-dark" href="index.html"><i class="tiny material-icons ">dashboard</i> Panel de control</a></li>
+      <li><a class="grey-text text-lighten-4 waves-effect waves-dark" href="formularios.html"><i class="tiny material-icons">note_add</i> Formularios</a></li>
+      <li><a class="grey-text text-lighten-4 waves-effect waves-dark" href="reportes.html"><i class="tiny material-icons">description</i> Reportes</a></li>
+    </ul>
+    <ul id="slide-out" class="side-nav">
+      <div>
+        <a class="logo" href="index.html"><img src="img/logo.png" alt="Logo" ></a>
+      </div>
+      <li class="search">
+        <div class="search-wrapper card">
+          <input id="search"><i class="material-icons">search</i>
+          <div class="search-results"></div>
+        </div>
+      </li>
+      <li class="active"><a class=" grey-text text-lighten-4 waves-effect waves-dark" href="index.html"><i class="tiny material-icons ">dashboard</i> Panel de control</a></li>
+      <li><a class="grey-text text-lighten-4 waves-effect waves-dark" href="formularios.html"><i class="tiny material-icons">note_add</i> Formularios</a></li>
+      <li><a class="grey-text text-lighten-4 waves-effect waves-dark" href="reportes.html"><i class="tiny material-icons">description</i> Reportes</a></li>
+    </ul>
+
+    <a href="#" data-activates="slide-out" class="button-collapse btn-floating btn-large" ><i class="large material-icons">menu</i></a>
+  </header>
+
+    <main class="">
+      <nav class="">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo hide-on-med-and-down">Usuario</a>
+          <ul class="right ">
+            <li><a href="#"><i class="material-icons">notifications</i><span class="badge">1</span></a></li>
+            <li>
+              <ul id="dropdown1" class="dropdown-content">
+                <li><a href="#">Perfil</a></li>
+                <li><a href="configuracion.html">Configuración</a></li>
+                <li><a href="#">Ayuda</a></li>
+                <li><a href="#">Cerrar sesión</a></li>
+              </ul>
+              <a href="#" class="dropdown-button" data-activates="dropdown1"><img id="perfil-img" class="circle responsive-img" src="img/perfil.png"></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <header>
+        <center><h4>Usuario</h4></center>
+      </header>
+
+      <form action="post">
+        <!--CLAVE, EXPIRACIÓN Y ESTATUS-->
+        <div class="row">
+          <div class="input-field col m4 s12">
+            <input name="clave_empleado" type="text" id="clave">
+            <label for="clave">Clave de empleado</label>
+          </div>
+          <div class="input-field col m4 s12">
+            <input name="fecha_expiracion" type="date" class="datepicker" placeholder="Fecha de expiración">
+          </div>
+          <div class="input-field col m4 s12">
+            <select name="estatus_empleado">
+              <option value="" disabled selected>Selecciona tu opción</option>
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+            </select>
+            <label>Estatus</label>
+          </div>
+        </div>
+
+        <!--NOMBRE, APELLIDOS-->
+        <div class="row">
+          <div class="input-field col m4 s12">
+            <input name="nombre" id="nombre" type="text">
+            <label for="nombre">Nombre</label>
+          </div>
+          <div class="input-field col m4 s12" >
+            <input name="app" id="app" type="text">
+            <label for="app">Apellido paterno</label>
+          </div>
+          <div class="input-field col m4 s12" >
+            <input name="apm" id="apm" type="text">
+            <label for="apm">Apellido materno</label>
+          </div>
+        </div>
+
+        <!-- USUARIO, CORREO Y CONTRASEÑA-->
+        <div class="row">
+          <div class="input-field col m4 s12">
+            <input name="nombre_usuario" type="text" id="nombre_usuario" class="validate">
+            <label for="nombre_usuario">Nombre de usuario</label>
+          </div>
+          <div class="input-field col m4 s12">
+            <input name="nombre_usuario" type="email" id="email" class="validate">
+            <label for="email">Correo electrónico</label>
+          </div>
+          <div class="input-field col m4 s12">
+            <input name="contraseña" type="password" id="contraseña">
+            <label for="contraseña">Contraseña</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col m2 offset-m8">
+            <input type="submit" class="btn" value="Guardar" name="usuario">
+          </div>
+          <div class="col m2">
+            <a href="configuracion.html" class="btn btn-warning">Cancelar</a>
+          </div>
+        </div>
+      </form>
+
+
+    </main>
+</body>
+
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/sparkline.min.js"></script>
+<script src="js/materialize.js"></script>
+
+<script>
+$('.button-collapse').sideNav({
+  menuWidth: 260, // Default is 240
+  edge: 'left', // Choose the horizontal origin
+  closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+});
+$(document).ready(function(){
+    $('ul.tabs').tabs();
+  });
+
+  $('.datepicker').pickadate({
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: 15 // Creates a dropdown of 15 years to control year
+  });
+  $('select').material_select();
+</script>
+</html>

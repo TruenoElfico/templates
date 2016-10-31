@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Template Index</title>
+
+  <link rel="stylesheet" href="css/materialize.css">
+  <link rel="stylesheet" href="css/custom.min.css">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+  <header>
+
+    <ul class="side-nav fixed hide-on-med-and-down grey">
+      <div>
+        <a class="logo" href="index.html"><img src="img/logo.png" alt="Logo" ></a>
+      </div>
+      <li class="search">
+        <div class="search-wrapper card">
+          <input id="search"><i class="material-icons">search</i>
+          <div class="search-results"></div>
+        </div>
+      </li>
+      <li><a class="grey-text text-lighten-4 waves-effect waves-dark" href="index.html"><i class="tiny material-icons ">dashboard</i> Panel de control</a></li>
+      <li><a class="grey-text text-lighten-4 waves-effect waves-dark" href="formularios.html"><i class="tiny material-icons">note_add</i> Formularios</a></li>
+      <li class="active"><a class="grey-text text-lighten-4 waves-effect waves-dark" href="reportes.html"><i class="tiny material-icons">description</i> Reportes</a></li>
+    </ul>
+    <ul id="slide-out" class="side-nav">
+      <div>
+        <a class="logo" href="index.html"><img src="img/logo.png" alt="Logo" ></a>
+      </div>
+      <li class="search">
+        <div class="search-wrapper card">
+          <input id="search"><i class="material-icons">search</i>
+          <div class="search-results"></div>
+        </div>
+      </li>
+      <li><a class=" grey-text text-lighten-4 waves-effect waves-dark" href="index.html"><i class="tiny material-icons ">dashboard</i> Panel de control</a></li>
+      <li><a class="grey-text text-lighten-4 waves-effect waves-dark" href="formularios.html"><i class="tiny material-icons">note_add</i> Formularios</a></li>
+      <li class="active"><a class="grey-text text-lighten-4 waves-effect waves-dark" href="reportes.html"><i class="tiny material-icons">description</i> Reportes</a></li>
+    </ul>
+
+    <a href="#" data-activates="slide-out" class="button-collapse btn-floating btn-large" ><i class="large material-icons">menu</i></a>
+  </header>
+
+    <main class="">
+      <nav class="">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo hide-on-med-and-down">Panel de control</a>
+          <ul class="right ">
+            <li><a href="#"><i class="material-icons">notifications</i><span class="badge">1</span></a></li>
+            <li>
+              <ul id="dropdown1" class="dropdown-content">
+                <li><a href="#">Perfil</a></li>
+                <li><a href="#">Configuración</a></li>
+                <li><a href="#">Ayuda</a></li>
+                <li><a href="#">Cerrar sesión</a></li>
+              </ul>
+              <a href="#" class="dropdown-button" data-activates="dropdown1"><img id="perfil-img" class="circle responsive-img" src="img/perfil.png"></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="wrapper">
+        <h1>&lt;h1&gtHola&lt;/h1&gt</h1>
+        <h2>&lt;h2&gtHola&lt;/h2&gt</h2>
+        <h3>&lt;h3&gtHola&lt;/h3&gt</h3>
+        <h4>&lt;h4&gtHola&lt;/h4&gt</h4>
+        <h5>&lt;h5&gtHola&lt;/h5&gt</h5>
+        <h6>&lt;h6&gtHola&lt;/h6&gt</h6>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi. Texto normal</p>
+        <p class="text-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi. Texto con clase .info</p>
+        <p class="text-warning">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi. Texto con clase .warning</p>
+        <p class="text-danger">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi. Texto con clase .danger</p>
+        <p class="text-success">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi. Texto con clase .success</p>
+
+        <table class="striped highlight responsive-table">
+          <thead>
+            <tr>
+                <th data-field="id">Name</th>
+                <th data-field="name">Item Name</th>
+                <th data-field="price">Item Price</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Alvin</td>
+              <td>Eclair</td>
+              <td>$0.87</td>
+            </tr>
+            <tr>
+              <td>Alan</td>
+              <td>Jellybean</td>
+              <td>$3.76</td>
+            </tr>
+            <tr>
+              <td>Jonathan</td>
+              <td>Lollipop</td>
+              <td>$7.00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+
+    </main>
+
+    <div class="fixed-action-btn horizontal" style="bottom: 45px; right: 24px;">
+      <a class="btn-floating btn-large blue">
+        <i class="large material-icons">add</i>
+      </a>
+      <ul>
+        <li><a src="#" class="btn-floating blue"><i class="material-icons">perm_identity</i></a></li>
+        <li><a src="#" class="btn-floating blue"><i class="material-icons">grade</i></a></li>
+        <li><a src="#" class="btn-floating blue"><i class="material-icons">schedule</i></a></li>
+        <li><a src="#" class="btn-floating blue"><i class="material-icons">class</i></a></li>
+      </ul>
+    </div>
+</body>
+
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>7
+<script type="text/javascript" src="js/sparkline.min.js"></script>
+<script src="js/materialize.js"></script>
+
+<script>
+$('.button-collapse').sideNav({
+  menuWidth: 260, // Default is 240
+  edge: 'left', // Choose the horizontal origin
+  closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+});
+</script>
+</html>

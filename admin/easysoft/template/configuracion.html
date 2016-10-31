@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Template Index</title>
+
+  <link rel="stylesheet" href="css/materialize.css">
+  <link rel="stylesheet" href="css/custom.min.css">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+  <header>
+
+    <ul class="side-nav fixed hide-on-med-and-down grey">
+      <div>
+        <a class="logo" href="index.html"><img src="img/logo.png" alt="Logo" ></a>
+      </div>
+      <li class="search">
+        <div class="search-wrapper card">
+          <input id="search"><i class="material-icons">search</i>
+          <div class="search-results"></div>
+        </div>
+      </li>
+      <li class="active"><a class="grey-text text-lighten-4 waves-effect waves-dark" href="index.html"><i class="tiny material-icons ">dashboard</i> Panel de control</a></li>
+      <li><a class="grey-text text-lighten-4 waves-effect waves-dark" href="formularios.html"><i class="tiny material-icons">note_add</i> Formularios</a></li>
+      <li><a class="grey-text text-lighten-4 waves-effect waves-dark" href="reportes.html"><i class="tiny material-icons">description</i> Reportes</a></li>
+    </ul>
+    <ul id="slide-out" class="side-nav">
+      <div>
+        <a class="logo" href="index.html"><img src="img/logo.png" alt="Logo" ></a>
+      </div>
+      <li class="search">
+        <div class="search-wrapper card">
+          <input id="search"><i class="material-icons">search</i>
+          <div class="search-results"></div>
+        </div>
+      </li>
+      <li class="active"><a class=" grey-text text-lighten-4 waves-effect waves-dark" href="index.html"><i class="tiny material-icons ">dashboard</i> Panel de control</a></li>
+      <li><a class="grey-text text-lighten-4 waves-effect waves-dark" href="formularios.html"><i class="tiny material-icons">note_add</i> Formularios</a></li>
+      <li><a class="grey-text text-lighten-4 waves-effect waves-dark" href="reportes.html"><i class="tiny material-icons">description</i> Reportes</a></li>
+    </ul>
+
+    <a href="#" data-activates="slide-out" class="button-collapse btn-floating btn-large" ><i class="large material-icons">menu</i></a>
+  </header>
+
+    <main class="">
+      <nav class="">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo hide-on-med-and-down">Configuración</a>
+          <ul class="right ">
+            <li><a href="#"><i class="material-icons">notifications</i><span class="badge">1</span></a></li>
+            <li>
+              <ul id="dropdown1" class="dropdown-content">
+                <li><a href="#">Perfil</a></li>
+                <li><a href="configuracion.html">Configuración</a></li>
+                <li><a href="#">Ayuda</a></li>
+                <li><a href="#">Cerrar sesión</a></li>
+              </ul>
+              <a href="#" class="dropdown-button" data-activates="dropdown1"><img id="perfil-img" class="circle responsive-img" src="img/perfil.png"></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="row">
+        <div class="col s12">
+          <ul class="tabs">
+            <li class="tab col s6"><a class="active" href="#usuario">Usuarios</a></li>
+            <li class="tab col s6"><a href="#rol">Rol</a></li>
+          </ul>
+        </div>
+        <!-- USUARIOS-->
+        <div id="usuario" class="col s12" style="padding: 20px; border-box:box-sizing;">
+          <header>
+            <center><h5>Usuarios</h5></center>
+          </header>
+
+          <table class="striped highlight responsive-table">
+            <thead>
+              <tr>
+                  <th data-field="id">Clave</th>
+                  <th data-field="img">Perfil</th>
+                  <th data-field="usuario">Nombre de usuario</th>
+                  <th data-field="nombre">Nombre</th>
+                  <th data-field="app">Apellido paterno</th>
+                  <th data-field="apm">Apellido materno</th>
+                  <th data-field="correo">Correo</th>
+                  <th data-field="estatus">Estatus</th>
+                  <th data-field="fecha_expiración">Expiración</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>001</td>
+                <td><img id="perfil-img" src="img/perfil.png" alt=""></td>
+                <td>West Coast</td>
+                <td>Michael</td>
+                <td>Rodriguez</td>
+                <td>Perez</td>
+                <td>westcoast@correo.com</td>
+                <td>alcien</td>
+                <td>25/11/2020</td>
+              </tr>
+              <tr>
+                <td>002</td>
+                <td><img id="perfil-img" src="img/perfil.png" alt=""></td>
+                <td>West Coast</td>
+                <td>Michael</td>
+                <td>Rodriguez</td>
+                <td>Perez</td>
+                <td>westcoast@correo.com</td>
+                <td>alcien</td>
+                <td>25/11/2020</td>
+              </tr>
+              <tr>
+                <td>003</td>
+                <td><img id="perfil-img" src="img/perfil.png" alt=""></td>
+                <td>West Coast</td>
+                <td>Michael</td>
+                <td>Rodriguez</td>
+                <td>Perez</td>
+                <td>westcoast@correo.com</td>
+                <td>alcien</td>
+                <td>25/11/2020</td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+
+        <!-- ROL-->
+        <div id="rol" class="col s12" style="padding: 20px; border-box:box-sizing;">
+          <table class="striped highlight responsive-table">
+            <thead>
+              <tr>
+                  <th data-field="id">Clave</th>
+                  <th data-field="rol">Rol</th>
+                  <th data-field="usuario">Nombre de usuario</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>001</td>
+                <td>ventas</td>
+                <td>West Coast</td>
+              </tr>
+              <tr>
+                <td>002</td>
+                <td>asistente</td>
+                <td>West Coast</td>
+              </tr>
+              <tr>
+                <td>003</td>
+                <td>médico</td>
+                <td>West Coast</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+
+
+    </main>
+
+    <div class="fixed-action-btn horizontal" style="bottom: 45px; right: 24px;">
+      <a class="btn-floating btn-large blue">
+        <i class="large material-icons">add</i>
+      </a>
+      <ul>
+        <li><a href="usuario.html" class="btn-floating blue"><i class="material-icons">perm_identity</i></a></li>
+        <li><a href="rol.html" class="btn-floating blue"><i class="material-icons">grade</i></a></li>
+      </ul>
+    </div>
+</body>
+
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/sparkline.min.js"></script>
+<script src="js/materialize.js"></script>
+
+<script>
+$('.button-collapse').sideNav({
+  menuWidth: 260, // Default is 240
+  edge: 'left', // Choose the horizontal origin
+  closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+});
+$(document).ready(function(){
+    $('ul.tabs').tabs();
+  });
+
+  $('.datepicker').pickadate({
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: 15 // Creates a dropdown of 15 years to control year
+  });
+  $('select').material_select();
+</script>
+</html>

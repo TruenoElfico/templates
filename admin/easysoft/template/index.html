@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Template Index</title>
+
+  <link rel="stylesheet" href="css/materialize.css">
+  <link rel="stylesheet" href="css/custom.min.css">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+  <header>
+
+    <ul class="side-nav fixed hide-on-med-and-down grey">
+      <div>
+        <a class="logo" href="index.html"><img src="img/logo.png" alt="Logo" ></a>
+      </div>
+      <li class="search">
+        <div class="search-wrapper card">
+          <input id="search"><i class="material-icons">search</i>
+          <div class="search-results"></div>
+        </div>
+      </li>
+      <li class="active"><a class="grey-text text-lighten-4 waves-effect waves-dark" href="index.html"><i class="tiny material-icons ">dashboard</i> Panel de control</a></li>
+      <li><a class="grey-text text-lighten-4 waves-effect waves-dark" href="formularios.html"><i class="tiny material-icons">note_add</i> Formularios</a></li>
+      <li><a class="grey-text text-lighten-4 waves-effect waves-dark" href="reportes.html"><i class="tiny material-icons">description</i> Reportes</a></li>
+    </ul>
+    <ul id="slide-out" class="side-nav">
+      <div>
+        <a class="logo" href="index.html"><img src="img/logo.png" alt="Logo" ></a>
+      </div>
+      <li class="search">
+        <div class="search-wrapper card">
+          <input id="search"><i class="material-icons">search</i>
+          <div class="search-results"></div>
+        </div>
+      </li>
+      <li class="active"><a class=" grey-text text-lighten-4 waves-effect waves-dark" href="index.html"><i class="tiny material-icons ">dashboard</i> Panel de control</a></li>
+      <li><a class="grey-text text-lighten-4 waves-effect waves-dark" href="formularios.html"><i class="tiny material-icons">note_add</i> Formularios</a></li>
+      <li><a class="grey-text text-lighten-4 waves-effect waves-dark" href="reportes.html"><i class="tiny material-icons">description</i> Reportes</a></li>
+    </ul>
+
+    <a href="#" data-activates="slide-out" class="button-collapse btn-floating btn-large" ><i class="large material-icons">menu</i></a>
+  </header>
+
+    <main class="">
+      <nav class="">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo hide-on-med-and-down">Panel de control</a>
+          <ul class="right ">
+            <li><a href="#"><i class="material-icons">notifications</i><span class="badge">1</span></a></li>
+            <li>
+              <ul id="dropdown1" class="dropdown-content">
+                <li><a href="#">Perfil</a></li>
+                <li><a href="configuracion.html">Configuración</a></li>
+                <li><a href="#">Ayuda</a></li>
+                <li><a href="#">Cerrar sesión</a></li>
+              </ul>
+              <a href="#" class="dropdown-button" data-activates="dropdown1"><img id="perfil-img" class="circle responsive-img" src="img/perfil.png"></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="row graphs">
+        <div id="first" class="col s4">
+          <div>
+            <span>Otros</span>
+            <span><h4>1000</h4></span>
+            <span>
+              <h4>SPARK</h4>
+            </span>
+          </div>
+        </div>
+        <div class="col s4">
+          <div>
+            <span>Consultas</span>
+            <span><h4>1000</h4></span>
+            <span>
+              <h4>SPARK</h4>
+            </span>
+          </div>
+        </div>
+        <div class="col s4">
+          <div>
+            <span>Pacientes</span>
+            <span><h4>500</h4></span>
+            <span>
+              <h4>SPARK</h4>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="row feed">
+        <div class="col s12 m8 sales">
+          <div class="head">
+            <h2>Ventas</h2>
+          </div>
+        </div>
+
+        <div class="col s12 m4 activity">
+          <div class="head">
+            <h2>Actividad</h2>
+          </div>
+          <div class="content">
+            <div class="block">
+              <div class="line">
+                  <span class="name-user"><b>El viejón</b> ha registrado el producto <b>Mascara</b></span>
+                  <span class="time-ago">Hace 2 horas</span>
+              </div>
+            </div>
+            <div class="block">
+              <div class="line">
+                  <span class="name-user"><b>El viejón</b> ha actualizado el producto <b>Mascara</b></span>
+                  <span class="time-ago">Hace 2 horas</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <div class="fixed-action-btn horizontal" style="bottom: 45px; right: 24px;">
+      <a class="btn-floating btn-large blue">
+        <i class="large material-icons">add</i>
+      </a>
+      <ul>
+        <li><a src="#" class="btn-floating blue"><i class="material-icons">perm_identity</i></a></li>
+        <li><a src="#" class="btn-floating blue"><i class="material-icons">grade</i></a></li>
+        <li><a src="#" class="btn-floating blue"><i class="material-icons">schedule</i></a></li>
+        <li><a src="#" class="btn-floating blue"><i class="material-icons">class</i></a></li>
+      </ul>
+    </div>
+
+</body>
+
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/sparkline.min.js"></script>
+<script src="js/materialize.js"></script>
+
+<script>
+$('.button-collapse').sideNav({
+  menuWidth: 260, // Default is 240
+  edge: 'left', // Choose the horizontal origin
+  closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+});
+</script>
+</html>

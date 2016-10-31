@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Template Index</title>
+
+  <link rel="stylesheet" href="css/materialize.css">
+  <link rel="stylesheet" href="css/custom.min.css">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+  <header>
+
+    <ul class="side-nav fixed hide-on-med-and-down grey">
+      <div>
+        <a class="logo" href="index.html"><img src="img/logo.png" alt="Logo" ></a>
+      </div>
+      <li class="search">
+        <div class="search-wrapper card">
+          <input id="search"><i class="material-icons">search</i>
+          <div class="search-results"></div>
+        </div>
+      </li>
+      <li class="active"><a class="grey-text text-lighten-4 waves-effect waves-dark" href="index.html"><i class="tiny material-icons ">dashboard</i> Panel de control</a></li>
+      <li><a class="grey-text text-lighten-4 waves-effect waves-dark" href="formularios.html"><i class="tiny material-icons">note_add</i> Formularios</a></li>
+      <li><a class="grey-text text-lighten-4 waves-effect waves-dark" href="reportes.html"><i class="tiny material-icons">description</i> Reportes</a></li>
+    </ul>
+    <ul id="slide-out" class="side-nav">
+      <div>
+        <a class="logo" href="index.html"><img src="img/logo.png" alt="Logo" ></a>
+      </div>
+      <li class="search">
+        <div class="search-wrapper card">
+          <input id="search"><i class="material-icons">search</i>
+          <div class="search-results"></div>
+        </div>
+      </li>
+      <li class="active"><a class=" grey-text text-lighten-4 waves-effect waves-dark" href="index.html"><i class="tiny material-icons ">dashboard</i> Panel de control</a></li>
+      <li><a class="grey-text text-lighten-4 waves-effect waves-dark" href="formularios.html"><i class="tiny material-icons">note_add</i> Formularios</a></li>
+      <li><a class="grey-text text-lighten-4 waves-effect waves-dark" href="reportes.html"><i class="tiny material-icons">description</i> Reportes</a></li>
+    </ul>
+
+    <a href="#" data-activates="slide-out" class="button-collapse btn-floating btn-large" ><i class="large material-icons">menu</i></a>
+  </header>
+
+    <main class="">
+      <nav class="">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo hide-on-med-and-down">Rol</a>
+          <ul class="right ">
+            <li><a href="#"><i class="material-icons">notifications</i><span class="badge">1</span></a></li>
+            <li>
+              <ul id="dropdown1" class="dropdown-content">
+                <li><a href="#">Perfil</a></li>
+                <li><a href="configuracion.html">Configuración</a></li>
+                <li><a href="#">Ayuda</a></li>
+                <li><a href="#">Cerrar sesión</a></li>
+              </ul>
+              <a href="#" class="dropdown-button" data-activates="dropdown1"><img id="perfil-img" class="circle responsive-img" src="img/perfil.png"></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <header>
+        <center><h4>Rol</h4></center>
+      </header>
+
+      <form action="post">
+        <!--  ROL, GUARDAR, CANCELAR-->
+        <div class="row ">
+          <div class="input-field col s12 m4">
+            <input id="rol" type="text" name="rol" autofocus="">
+            <label for="rol">Rol</label>
+          </div>
+        </div>
+
+        <ul class="collapsible" data-collapsible="expandable">
+          <li>
+            <div class="collapsible-header"><i class="material-icons">folder</i>
+              <p>
+                <input type="checkbox" class="filled-in" id="facturacion" />
+                <label for="facturacion">Facturación</label>
+              </p>
+            </div>
+            <div class="collapsible-body">
+              <p>
+                <input type="checkbox" class="filled-in" id="errores-facturacion" />
+                <label for="errores-facturacion">Errores de facturación</label>
+              </p>
+
+              <ul class="collapsible" data-collapsible="expandable">
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">folder</i>
+                    <p>
+                      <input type="checkbox" class="filled-in" id="configuracion" />
+                      <label for="configuracion">Configuracion</label>
+                    </p>
+                  </div>
+                  <div class="collapsible-body">
+                    <p>
+                      <input type="checkbox" class="filled-in" id="errores-facturacion" />
+                      <label for="errores-facturacion">Errores de facturación</label>
+                    </p>
+                  </div>
+                </li>
+              </ul>
+
+              <ul class="collapsible" data-collapsible="expandable">
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">folder</i>
+                    <p>
+                      <input type="checkbox" class="filled-in" id="planes-pago" />
+                      <label for="planes-pago">Planes de pago</label>
+                    </p>
+                  </div>
+                  <div class="collapsible-body">
+                    <p>
+                      <input type="checkbox" class="filled-in" id="errores-facturacion" />
+                      <label for="errores-facturacion">Errores de facturación</label>
+                    </p>
+                  </div>
+                </li>
+              </ul>
+
+              <p>
+                <input type="checkbox" class="filled-in" id="incrementos" />
+                <label for="incrementos">Incrementos</label>
+              </p>
+
+              <p>
+                <input type="checkbox" class="filled-in" id="importacion" />
+                <label for="importacion">Importación</label>
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div class="collapsible-header"><i class="material-icons">folder</i>
+              <p>
+                <input type="checkbox" class="filled-in" id="filled-in-box" />
+                <label for="filled-in-box">Presupuestos</label>
+              </p>
+            </div>
+            <div class="collapsible-body">
+              <p>
+                <input type="checkbox" class="filled-in" id="ingresos" />
+                <label for="ingresos">Ingresos</label>
+              </p>
+              <p>
+                <input type="checkbox" class="filled-in" id="egresos" />
+                <label for="egresos">Egresos</label>
+              </p>
+              <p>
+                <input type="checkbox" class="filled-in" id="egresos-unidad" />
+                <label for="egresos-unidad">Egresos por unidad</label>
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div class="collapsible-header"><i class="material-icons">folder</i>
+              <p>
+                <input type="checkbox" class="filled-in" id="filled-in-box" />
+                <label for="filled-in-box">Planeación</label>
+              </p>
+            </div>
+            <div class="collapsible-body">
+              <p>...</p>
+            </div>
+          </li>
+        </ul>
+
+        <div class="row">
+          <div class="col m2 offset-m8">
+            <input type="submit" class="btn" value="Guardar" name="usuario">
+          </div>
+          <div class="col m2">
+            <a href="configuracion.html#rol" class="btn btn-warning">Cancelar</a>
+          </div>
+        </div>
+
+      </form>
+
+
+
+    </main>
+</body>
+
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/sparkline.min.js"></script>
+<script src="js/materialize.js"></script>
+
+<script>
+$('.button-collapse').sideNav({
+  menuWidth: 260, // Default is 240
+  edge: 'left', // Choose the horizontal origin
+  closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+});
+$(document).ready(function(){
+    $('ul.tabs').tabs();
+  });
+
+  $('.datepicker').pickadate({
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: 15 // Creates a dropdown of 15 years to control year
+  });
+  $('select').material_select();
+</script>
+</html>
